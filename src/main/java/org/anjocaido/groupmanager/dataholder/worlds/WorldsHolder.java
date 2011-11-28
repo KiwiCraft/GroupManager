@@ -72,7 +72,7 @@ public class WorldsHolder {
                 loadWorld(folder.getName());
             }
         }
-        Map<String, Object> mirrorsMap = plugin.getConfig().getMirrorsMap();
+        Map<String, Object> mirrorsMap = plugin.getGMConfig().getMirrorsMap();
         if (mirrorsMap != null) {
             for (String source : mirrorsMap.keySet()) {
                 if (mirrorsMap.get(source) instanceof ArrayList) {
